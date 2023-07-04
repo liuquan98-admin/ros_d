@@ -1,0 +1,8 @@
+prefix=/home/rootquan/ros_d/devel
+
+Name: chao_pkg
+Description: Description of chao_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

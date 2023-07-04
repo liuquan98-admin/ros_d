@@ -1,0 +1,2 @@
+chao_pkg
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/rootquan/ros_d/devel -DCMAKE_INSTALL_PREFIX=/home/rootquan/ros_d/install -G Unix Makefiles
