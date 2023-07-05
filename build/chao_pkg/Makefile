@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+chao_pkg/CMakeFiles/subscriber.dir/rule:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f CMakeFiles/Makefile2 chao_pkg/CMakeFiles/subscriber.dir/rule
+.PHONY : chao_pkg/CMakeFiles/subscriber.dir/rule
+
+# Convenience name for target.
+subscriber: chao_pkg/CMakeFiles/subscriber.dir/rule
+
+.PHONY : subscriber
+
+# fast build rule for target.
+subscriber/fast:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/build
+.PHONY : subscriber/fast
+
+# Convenience name for target.
 chao_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /home/rootquan/ros_d/build && $(MAKE) -f CMakeFiles/Makefile2 chao_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : chao_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -434,6 +449,33 @@ src/chao_node.cpp.s:
 	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/chao_node.dir/build.make chao_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.s
 .PHONY : src/chao_node.cpp.s
 
+src/subscriber.o: src/subscriber.cpp.o
+
+.PHONY : src/subscriber.o
+
+# target to build an object file
+src/subscriber.cpp.o:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+.PHONY : src/subscriber.cpp.o
+
+src/subscriber.i: src/subscriber.cpp.i
+
+.PHONY : src/subscriber.i
+
+# target to preprocess a source file
+src/subscriber.cpp.i:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
+.PHONY : src/subscriber.cpp.i
+
+src/subscriber.s: src/subscriber.cpp.s
+
+.PHONY : src/subscriber.s
+
+# target to generate assembly for a file
+src/subscriber.cpp.s:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
+.PHONY : src/subscriber.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,6 +486,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... subscriber"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... chao_node"
@@ -466,6 +509,9 @@ help:
 	@echo "... src/chao_node.o"
 	@echo "... src/chao_node.i"
 	@echo "... src/chao_node.s"
+	@echo "... src/subscriber.o"
+	@echo "... src/subscriber.i"
+	@echo "... src/subscriber.s"
 .PHONY : help
 
 

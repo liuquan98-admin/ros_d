@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rootquan/ros_d/src/chao_pkg/src/chao_node.cpp
+/home/rootquan/ros_d/src/chao_pkg/src/subscriber.cpp
 ros/ros.h
 -
 std_msgs/String.h
