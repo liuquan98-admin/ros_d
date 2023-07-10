@@ -285,17 +285,30 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named subscriber
+# Target rules for targets named demo_topic_subscriber
 
 # Build rule for target.
-subscriber: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 subscriber
-.PHONY : subscriber
+demo_topic_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_topic_subscriber
+.PHONY : demo_topic_subscriber
 
 # fast build rule for target.
-subscriber/fast:
-	$(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/build
-.PHONY : subscriber/fast
+demo_topic_subscriber/fast:
+	$(MAKE) -f chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build.make chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build
+.PHONY : demo_topic_subscriber/fast
+
+#=============================================================================
+# Target rules for targets named demo_topic_publisher
+
+# Build rule for target.
+demo_topic_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_topic_publisher
+.PHONY : demo_topic_publisher
+
+# fast build rule for target.
+demo_topic_publisher/fast:
+	$(MAKE) -f chao_pkg/CMakeFiles/demo_topic_publisher.dir/build.make chao_pkg/CMakeFiles/demo_topic_publisher.dir/build
+.PHONY : demo_topic_publisher/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -322,19 +335,6 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 std_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f chao_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make chao_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named chao_node
-
-# Build rule for target.
-chao_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 chao_node
-.PHONY : chao_node
-
-# fast build rule for target.
-chao_node/fast:
-	$(MAKE) -f chao_pkg/CMakeFiles/chao_node.dir/build.make chao_pkg/CMakeFiles/chao_node.dir/build
-.PHONY : chao_node/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -527,10 +527,10 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... subscriber"
+	@echo "... demo_topic_subscriber"
+	@echo "... demo_topic_publisher"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... chao_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"

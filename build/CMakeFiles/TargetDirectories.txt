@@ -39,10 +39,10 @@
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/rebuild_cache.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/edit_cache.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/test.dir
-/home/rootquan/ros_d/build/chao_pkg/CMakeFiles/subscriber.dir
+/home/rootquan/ros_d/build/chao_pkg/CMakeFiles/demo_topic_subscriber.dir
+/home/rootquan/ros_d/build/chao_pkg/CMakeFiles/demo_topic_publisher.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir
-/home/rootquan/ros_d/build/chao_pkg/CMakeFiles/chao_node.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/roscpp_generate_messages_eus.dir
 /home/rootquan/ros_d/build/chao_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir

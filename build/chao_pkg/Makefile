@@ -168,19 +168,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-chao_pkg/CMakeFiles/subscriber.dir/rule:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f CMakeFiles/Makefile2 chao_pkg/CMakeFiles/subscriber.dir/rule
-.PHONY : chao_pkg/CMakeFiles/subscriber.dir/rule
+chao_pkg/CMakeFiles/demo_topic_subscriber.dir/rule:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f CMakeFiles/Makefile2 chao_pkg/CMakeFiles/demo_topic_subscriber.dir/rule
+.PHONY : chao_pkg/CMakeFiles/demo_topic_subscriber.dir/rule
 
 # Convenience name for target.
-subscriber: chao_pkg/CMakeFiles/subscriber.dir/rule
+demo_topic_subscriber: chao_pkg/CMakeFiles/demo_topic_subscriber.dir/rule
 
-.PHONY : subscriber
+.PHONY : demo_topic_subscriber
 
 # fast build rule for target.
-subscriber/fast:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/build
-.PHONY : subscriber/fast
+demo_topic_subscriber/fast:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build.make chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build
+.PHONY : demo_topic_subscriber/fast
+
+# Convenience name for target.
+chao_pkg/CMakeFiles/demo_topic_publisher.dir/rule:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f CMakeFiles/Makefile2 chao_pkg/CMakeFiles/demo_topic_publisher.dir/rule
+.PHONY : chao_pkg/CMakeFiles/demo_topic_publisher.dir/rule
+
+# Convenience name for target.
+demo_topic_publisher: chao_pkg/CMakeFiles/demo_topic_publisher.dir/rule
+
+.PHONY : demo_topic_publisher
+
+# fast build rule for target.
+demo_topic_publisher/fast:
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_publisher.dir/build.make chao_pkg/CMakeFiles/demo_topic_publisher.dir/build
+.PHONY : demo_topic_publisher/fast
 
 # Convenience name for target.
 chao_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -211,21 +226,6 @@ std_msgs_generate_messages_nodejs: chao_pkg/CMakeFiles/std_msgs_generate_message
 std_msgs_generate_messages_nodejs/fast:
 	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make chao_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-chao_pkg/CMakeFiles/chao_node.dir/rule:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f CMakeFiles/Makefile2 chao_pkg/CMakeFiles/chao_node.dir/rule
-.PHONY : chao_pkg/CMakeFiles/chao_node.dir/rule
-
-# Convenience name for target.
-chao_node: chao_pkg/CMakeFiles/chao_node.dir/rule
-
-.PHONY : chao_node
-
-# fast build rule for target.
-chao_node/fast:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/chao_node.dir/build.make chao_pkg/CMakeFiles/chao_node.dir/build
-.PHONY : chao_node/fast
 
 # Convenience name for target.
 chao_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -428,7 +428,7 @@ src/chao_node.o: src/chao_node.cpp.o
 
 # target to build an object file
 src/chao_node.cpp.o:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/chao_node.dir/build.make chao_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.o
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_publisher.dir/build.make chao_pkg/CMakeFiles/demo_topic_publisher.dir/src/chao_node.cpp.o
 .PHONY : src/chao_node.cpp.o
 
 src/chao_node.i: src/chao_node.cpp.i
@@ -437,7 +437,7 @@ src/chao_node.i: src/chao_node.cpp.i
 
 # target to preprocess a source file
 src/chao_node.cpp.i:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/chao_node.dir/build.make chao_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.i
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_publisher.dir/build.make chao_pkg/CMakeFiles/demo_topic_publisher.dir/src/chao_node.cpp.i
 .PHONY : src/chao_node.cpp.i
 
 src/chao_node.s: src/chao_node.cpp.s
@@ -446,7 +446,7 @@ src/chao_node.s: src/chao_node.cpp.s
 
 # target to generate assembly for a file
 src/chao_node.cpp.s:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/chao_node.dir/build.make chao_pkg/CMakeFiles/chao_node.dir/src/chao_node.cpp.s
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_publisher.dir/build.make chao_pkg/CMakeFiles/demo_topic_publisher.dir/src/chao_node.cpp.s
 .PHONY : src/chao_node.cpp.s
 
 src/subscriber.o: src/subscriber.cpp.o
@@ -455,7 +455,7 @@ src/subscriber.o: src/subscriber.cpp.o
 
 # target to build an object file
 src/subscriber.cpp.o:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build.make chao_pkg/CMakeFiles/demo_topic_subscriber.dir/src/subscriber.cpp.o
 .PHONY : src/subscriber.cpp.o
 
 src/subscriber.i: src/subscriber.cpp.i
@@ -464,7 +464,7 @@ src/subscriber.i: src/subscriber.cpp.i
 
 # target to preprocess a source file
 src/subscriber.cpp.i:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build.make chao_pkg/CMakeFiles/demo_topic_subscriber.dir/src/subscriber.cpp.i
 .PHONY : src/subscriber.cpp.i
 
 src/subscriber.s: src/subscriber.cpp.s
@@ -473,7 +473,7 @@ src/subscriber.s: src/subscriber.cpp.s
 
 # target to generate assembly for a file
 src/subscriber.cpp.s:
-	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/subscriber.dir/build.make chao_pkg/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
+	cd /home/rootquan/ros_d/build && $(MAKE) -f chao_pkg/CMakeFiles/demo_topic_subscriber.dir/build.make chao_pkg/CMakeFiles/demo_topic_subscriber.dir/src/subscriber.cpp.s
 .PHONY : src/subscriber.cpp.s
 
 # Help Target
@@ -486,10 +486,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... subscriber"
+	@echo "... demo_topic_subscriber"
+	@echo "... demo_topic_publisher"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... chao_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"

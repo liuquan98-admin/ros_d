@@ -7,7 +7,7 @@ void number_call(const std_msgs::Int32::ConstPtr& msg){
 }
 int main(int argc, char  *argv[])
 {
-   ros::init(argc,argv,"subscriber");//初始化chao_node节点
+   ros::init(argc,argv,"demo_topic_subscriber");//初始化chao_node节点
    ros::NodeHandle nh;//创建一个NodeHandle对象与ROS通信
    ros::Subscriber sub=nh.subscribe("/number",10,number_call); //回调函数
    ros::spin(); //添加一条注释

@@ -204,11 +204,11 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(chao_node src/chao_node.cpp)
- target_link_libraries(chao_node
+add_executable(demo_topic_publisher src/chao_node.cpp)
+ target_link_libraries(demo_topic_publisher
    ${catkin_LIBRARIES}
  )
- add_executable(subscriber src/subscriber.cpp)
- target_link_libraries(subscriber
+ add_executable(demo_topic_subscriber src/subscriber.cpp)
+ target_link_libraries(demo_topic_subscriber
    ${catkin_LIBRARIES}
  )
