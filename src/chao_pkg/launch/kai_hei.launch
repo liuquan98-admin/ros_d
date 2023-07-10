@@ -1,0 +1,4 @@
+<launch>
+<node pkg="chao_pkg" type="chao_node" name="chao_node" />
+<node pkg="chao_pkg" type="subscriber" name="subscriber" />
+</launch>
